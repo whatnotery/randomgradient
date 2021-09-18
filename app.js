@@ -11,9 +11,8 @@ function returnGradient() {
 
   };
 
-const body = document.querySelector('body');
 const h1 = document.querySelector('h1')
-body.addEventListener('click', function () {
+h1.addEventListener('click', function () {
     const gradient = returnGradient();
     document.body.style.background = gradient;
     h1.innerText = gradient;
