@@ -57,6 +57,29 @@ body {
     align-items: center;
     font-family: "roboto mono";
     color: black;
+}
 
+
+
+
+@media (max-width:768px) {
+	h1 {
+		font-size: .75rem;
+		letter-spacing: -.08rem;
+}
+}
+
+@media (max-width:425px) {
+	h1 {
+		font-size: .60rem;
+		letter-spacing: -.08rem;
+}
+}
+
+@media (max-width:425px) {
+	h1 {
+		font-size: .50rem;
+		letter-spacing: -.08rem;
+}
 }
 
