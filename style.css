@@ -71,14 +71,14 @@ body {
 
 @media (max-width:425px) {
 	h1 {
-		font-size: .60rem;
+		font-size: .65rem;
 		letter-spacing: -.08rem;
 }
 }
 
-@media (max-width:425px) {
+@media (max-width:320px) {
 	h1 {
-		font-size: .50rem;
+		font-size: .55rem;
 		letter-spacing: -.08rem;
 }
 }
