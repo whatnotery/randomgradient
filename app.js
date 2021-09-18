@@ -12,7 +12,7 @@ function returnGradient() {
   };
 
 const body = document.querySelector('body');
-const h1 = document.querySelector()
+const h1 = document.querySelector('h1')
 body.addEventListener('click', function () {
     const gradient = returnGradient();
     document.body.style.background = gradient;
