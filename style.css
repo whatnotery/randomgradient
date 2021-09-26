@@ -136,6 +136,7 @@ table {
 
 body {
 	font-family: "roboto mono";
+	height: 100vh;
 }
 
 
@@ -156,9 +157,12 @@ button {
 }
 
 .social {
+	color: black;
 	padding-top: 5px;
-	position: fixed;
-	top: 95%;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	
 }
 
 
@@ -167,6 +171,7 @@ a:visited,
 a:hover,
 a:active {
 	text-decoration: none;
+	color: black;
 }
 
 @media (max-width:768px) {
