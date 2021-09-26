@@ -157,8 +157,10 @@ button {
 }
 
 .social {
+	background:rgba(255,255,255, 0.3);
 	color: black;
-	padding-top: 5px;
+	border-radius: 5px;
+	padding: 5px;
 	position: absolute;
 	bottom: 5px;
 	right: 5px;
@@ -175,21 +177,21 @@ a:active {
 }
 
 @media (max-width:768px) {
-	h1 {
+	button {
 		font-size: .75rem;
 		letter-spacing: -.08rem;
 	}
 }
 
 @media (max-width:425px) {
-	h1 {
+	button {
 		font-size: .65rem;
 		letter-spacing: -.08rem;
 	}
 }
 
 @media (max-width:320px) {
-	h1 {
+	button {
 		font-size: .55rem;
 		letter-spacing: -.08rem;
 	}
