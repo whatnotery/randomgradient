@@ -142,7 +142,7 @@ body {
 
 .container {
 	display: flex;
-	height: 100vh;
+	height: 96vh;
 	justify-content: center;
 	align-items: center;
 	color: black;
@@ -161,9 +161,10 @@ button {
 	color: black;
 	border-radius: 5px;
 	padding: 5px;
-	position: absolute;
-	bottom: 5px;
-	right: 5px;
+	margin: 5px;
+	position: sticky;
+	float: right;
+	
 	
 }
 
