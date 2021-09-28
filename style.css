@@ -148,12 +148,22 @@ body {
 	color: black;
 }
 
-button {
-	font-family: "roboto mono";
+.btnWrap {
 	border: black solid 1px;
 	border-radius: 10px;
 	padding: 7px 7px;
 	background-color: white;
+}
+
+button {
+	font-family: "roboto mono";
+	background-color: white;
+	border: none;
+	
+}
+
+.hide {
+	display: none;
 }
 
 .social {

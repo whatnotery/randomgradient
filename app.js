@@ -12,8 +12,23 @@ function returnGradient() {
   };
 
 const button = document.querySelector('button')
-button.addEventListener('click', function () {
+const copyButton = document.querySelector('#copy')
+const cbIcon = document.querySelector('i')
+
+button.addEventListener('click', function (e) {
     const gradient = returnGradient();
     document.body.style.background = gradient;
-    button.innerText = gradient;
+    button.innerHTML = gradient
+    copyButton.classList.remove('hide')
+    cbIcon.setAttribute('class', 'bi bi-clipboard');
 });
+
+copyButton.addEventListener('click', function (e) {
+  let buttonText = button.innerText;
+  const cb = navigator.clipboard;
+  cb.writeText(buttonText);
+  cbIcon.setAttribute('class', 'bi bi-clipboard-check');
+});
+
+
+
