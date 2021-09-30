@@ -7,20 +7,30 @@ function genRGB() {
 
 function returnGradient() {
     let deg =Math.floor(Math.random() * 360);
-    return `linear-gradient(${deg}deg,${genRGB()},${genRGB()},${genRGB()})`
+    return `linear-gradient(${deg}deg,${genRGB()},${genRGB()},${genRGB()})`;
 
   };
 
-const button = document.querySelector('button')
-const copyButton = document.querySelector('#copy')
-const cbIcon = document.querySelector('i')
+const button = document.querySelector('#main');
+const copyButton = document.querySelector('#copy');
+const cbIcon = document.querySelector('#cbIcon');
+const histButton = document.querySelector('#history')
+const histIcon = document.querySelector('#hIcon')
+let history = [];
+let histCount = 0
 
 button.addEventListener('click', function (e) {
     const gradient = returnGradient();
     document.body.style.background = gradient;
-    button.innerHTML = gradient
-    copyButton.classList.remove('hide')
+    button.innerHTML = gradient;
+    history.unshift(gradient);
+    copyButton.classList.remove('hide');
     cbIcon.setAttribute('class', 'bi bi-clipboard');
+    if (history.length > 1) {
+      histButton.classList.remove('hide');
+      hIcon.setAttribute('class', 'bi bi-arrow-left');
+    }
+    histCount =0
 });
 
 copyButton.addEventListener('click', function (e) {
@@ -30,5 +40,10 @@ copyButton.addEventListener('click', function (e) {
   cbIcon.setAttribute('class', 'bi bi-clipboard-check');
 });
 
+histButton.addEventListener('click', function (e) {
+  histCount += 1
+  document.body.style.background = history[histCount];
 
+
+})
 
