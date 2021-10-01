@@ -30,6 +30,7 @@ button.addEventListener('click', function (e) {
       histButton.classList.remove('hide');
       hIcon.setAttribute('class', 'bi bi-arrow-left');
     }
+    histButton.disabled = false
     histCount =0
 });
 
@@ -44,6 +45,12 @@ histButton.addEventListener('click', function (e) {
   histCount += 1
   cbIcon.setAttribute('class', 'bi bi-clipboard');
   document.body.style.background = history[histCount];
+  if (histCount < history.length) {
   button.innerHTML = history[histCount];
+} else {
+  let lastGrad = histCount - 1;
+  button.innerHTML = history[lastGrad];
+  histButton.disabled = true
+}
 })
 
