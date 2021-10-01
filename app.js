@@ -42,8 +42,8 @@ copyButton.addEventListener('click', function (e) {
 
 histButton.addEventListener('click', function (e) {
   histCount += 1
+  cbIcon.setAttribute('class', 'bi bi-clipboard');
   document.body.style.background = history[histCount];
-
-
+  button.innerHTML = history[histCount];
 })
 
